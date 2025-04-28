@@ -9,7 +9,7 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://dpg-d003du2li9vc739gqh4g-a.frankfurt-postgres.render.com/course_bd_lkem # Додайте власний HOST та базу даних
+    url: jdbc:postgresql://dpg-d003du2li9vc739gqh4g-a/course_bd_lkem # Додайте власний HOST та базу даних
     username: user # додайте власний логін
     password: F4kUYVbggOUnX9pZNiOrLUhLjN6J20Jo # додайте власний пароль
     driverClassName: org.postgresql.Driver
