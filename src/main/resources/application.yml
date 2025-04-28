@@ -1,3 +1,4 @@
+#file: noinspection SpringBootApplicationYaml
 spring:
   jpa:
     database: POSTGRESQL
@@ -8,10 +9,11 @@ spring:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
   datasource:
-    url: jdbc:postgresql://host/database # Додайте власний HOST та базу даних
+    url: jdbc:postgresql://dpg-d003du2li9vc739gqh4g-a.frankfurt-postgres.render.com/course_bd_lkem # Додайте власний HOST та базу даних
     username: user # додайте власний логін
-    password: password # додайте власний пароль
+    password: F4kUYVbggOUnX9pZNiOrLUhLjN6J20Jo # додайте власний пароль
     driverClassName: org.postgresql.Driver
   sql:
     init:
       platform: postgres
+
