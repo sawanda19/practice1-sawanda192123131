@@ -49,7 +49,7 @@
 <body>
 <div class="container">
     <h1>Курсова робота з дисципліни: "Об'єктно-орієнтоване програмування"</h1>
-    <p>Виконав: студент групи АІ-231 Акімов Андрій</p>
+    <p>Виконав: студент групи [Ваша Група] [Ваше ПІБ]</p>
 
     <h2>Список REST-запитів:</h2>
 
@@ -81,7 +81,7 @@
             <li><a href="/api/courses">GET /api/courses – Отримати список усіх курсів</a></li>
             <li>POST /api/courses – Створити новий курс</li>
             <li><a href="/api/courses/1">GET /api/courses/{id} – Отримати курс за ідентифікатором</a></li>
-            <li><a href="/api/instructor/1/courses">GET /api/instructor/{id}/courses – Отримати всі курси, які читає певний викладач</a></li>
+            <li><a href="/api/courses/instructor/1">GET /api/courses/instructor/{id} – Отримати всі курси, які читає певний викладач</a></li>
             <li>PUT /api/courses/{id} – Оновити інформацію про курс</li>
             <li>DELETE /api/courses/{id} – Видалити курс</li>
         </ul>
@@ -91,8 +91,8 @@
         <h3>Зарахування та Оцінки</h3>
         <ul>
             <li>POST /api/enrollments – Записати студента на курс</li>
-            <li><a href="/api/course/1/students">GET /api/course/{id}/students – Отримати список усіх студентів, які записані на певний курс</a></li>
-            <li><a href="/api/student/1/courses">GET /api/student/{id}/courses – Отримати список усіх курсів, на які записаний студент</a></li>
+            <li><a href="/api/enrollments/course/1">GET /api/enrollments/course/{id} – Отримати список усіх студентів, які записані на певний курс</a></li>
+            <li><a href="/api/enrollments/student/1">GET /api/enrollments/student/{id} – Отримати список усіх курсів, на які записаний студент</a></li>
             <li>PUT /api/enrollments/{studentId}/{courseId}/grade – Оновити оцінку студента по курсу</li>
             <li>DELETE /api/enrollments/{studentId}/{courseId} – Видалити запис про участь студента в курсі</li>
         </ul>
@@ -101,16 +101,16 @@
     <div class="endpoint-group">
         <h3>Завдання</h3>
         <ul>
-            <li>POST /api/course/{courseId}/assignments – Додати нове завдання до курсу</li>
-            <li><a href="/api/course/1/assignments">GET /api/course/{id}/assignments – Отримати всі завдання певного курсу</a></li>
+            <li>POST /api/assignments/course/{courseId} – Додати нове завдання до курсу</li>
+            <li><a href="/api/assignments/course/1">GET /api/assignments/course/{id} – Отримати всі завдання певного курсу</a></li>
             <li>PUT /api/assignments/{id} – Оновити завдання курсу</li>
-            <li>DELETE /api/course/{id}/assignments/{id} – Видалити завдання з курсу</li>
+            <li>DELETE /api/assignments/{id} – Видалити завдання з курсу</li>
         </ul>
     </div>
 
     <h2>Postman Requests</h2>
     <p>Click the link below to view and test the API requests in Postman:</p>
-    <a href="https://andreyakimov.postman.co/workspace/Andrey-Akimov's-Workspace~0bf1e057-27c1-422e-8670-460cbe77c331/collection/44244121-ee78bc1f-88e6-43d3-bafd-863f02ad80f2?action=share&creator=44244121" target="_blank">View Postman Collection</a>
+    <a href="[Your Postman Collection Link]" target="_blank">View Postman Collection</a>
 </div>
 </body>
 </html>
