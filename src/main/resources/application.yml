@@ -17,15 +17,3 @@ spring:
     init:
       platform: postgres
 
-# Додано налаштування сервера
-server:
-  port: 8080
-  servlet:
-    context-path: /
-
-  # Додано налаштування для Thymeleaf (якщо використовується)
-  thymeleaf:
-    enabled: true
-    prefix: classpath:/templates/
-    suffix: .html
-    cache: false
