@@ -20,7 +20,7 @@ WORKDIR /app
 COPY --from=build /app/target/*.jar app.jar
 
 # Відкриваємо порт (Render автоматично визначає його)
-EXPOSE 8080
+EXPOSE 8081
 
 # Запускаємо Spring Boot-додаток
 ENTRYPOINT ["java", "-jar", "app.jar"]
