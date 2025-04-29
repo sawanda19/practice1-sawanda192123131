@@ -58,7 +58,7 @@
         <ul>
             <li><a href="/api/students">GET /api/students – Отримати список усіх студентів</a></li>
             <li>POST /api/students – Додати нового студента</li>
-            <li><a href="/api/students/1">GET /api/students/{id} – Отримати студента за ідентифікатором</a></li>
+            <li><a href="/api/students/3">GET /api/students/{id} – Отримати студента за ідентифікатором</a></li>
             <li>PUT /api/students/{id} – Оновити інформацію про студента</li>
             <li>DELETE /api/students/{id} – Видалити студента</li>
         </ul>
@@ -91,8 +91,8 @@
         <h3>Зарахування та Оцінки</h3>
         <ul>
             <li>POST /api/enrollments – Записати студента на курс</li>
-            <li><a href="/api/enrollments/course/1">GET /api/enrollments/course/{id} – Отримати список усіх студентів, які записані на певний курс</a></li>
-            <li><a href="/api/enrollments/student/1">GET /api/enrollments/student/{id} – Отримати список усіх курсів, на які записаний студент</a></li>
+            <li><a href="/api/courses/1/students">GET /api/course/{id}/students – Отримати список усіх студентів, які записані на певний курс</a></li>
+            <li><a href="/api/students/5/courses">GET /api/student/{id}/courses – Отримати список усіх курсів, на які записаний студент</a></li>
             <li>PUT /api/enrollments/{studentId}/{courseId}/grade – Оновити оцінку студента по курсу</li>
             <li>DELETE /api/enrollments/{studentId}/{courseId} – Видалити запис про участь студента в курсі</li>
         </ul>
